@@ -7,12 +7,12 @@ import Header from './containers/Header';
 import WhatGPT3 from './containers/WhatGPT3';
 import Possibility from './containers/Possibility';
 import CallToAction from './components/CallToAction';
-import Features from './components/Features';
+import Features from './containers/Features';
 
 function App() {
   return (
-    <div className="App  w-full h-screen">
-      <div className="">
+    <div className="App">
+      <div>
         <Navbar />
         <Header />
       </div>
