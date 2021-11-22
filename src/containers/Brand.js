@@ -6,7 +6,7 @@ import atlassian from '../assets/atlassian.png';
 
 const Brand = () => {
    return (
-      <div className="flex items-center justify-center space-x-8 p-4 mt-4 flex-wrap">
+      <div className="flex flex-col lg:flex-row items-center justify-center space-ylg:space-x-8 mb-4 flex-wrap">
          <img src={google} alt="google" style={{minWidth:'100px', maxWidth: '140px'}}  className="mt-2"/>
          <img src={slack} alt="slack" style={{minWidth:'100px', maxWidth: '140px'}}  className="mt-2"/>
          <img src={shopify} alt="shopify" style={{minWidth:'100px', maxWidth:'140px'}}  className="mt-2"/>

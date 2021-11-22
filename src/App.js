@@ -12,11 +12,9 @@ import Features from './containers/Features';
 function App() {
   return (
     <div className="App">
-      <div>
-        <Navbar />
-        <Header />
-      </div>
-      <Brand />
+      <Navbar />
+      <Header />
+      <Brand /> 
       <WhatGPT3 />
       <Features />
       <Possibility />

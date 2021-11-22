@@ -4,7 +4,7 @@ const Features = () => {
    return (
      <div>
         {/* main container */}
-        <div className="flex flex-col lg:flex-row w-4/5 max-w-screen-lg m-auto mt-6 justify-evenly space-y-12">
+        <div className="flex flex-col lg:flex-row w-4/5 max-w-screen-lg m-auto mt-6 justify-evenly space-y-12" id="features">
            {/* sub section 1 */}
            <div className="flex flex-col lg:w-5/12 justify-evenly">
             <h1 className="text-4xl bg-gradient-to-r from-red-400 via-blue-400 to-blue-200 text-transparent

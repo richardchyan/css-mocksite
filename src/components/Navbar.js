@@ -9,16 +9,16 @@ const Navbar = () => {
 
    return (
       <div className="bg-gradient-to-r from-black via-indigo-900 to-blue-500" id="home">
-         <nav className="flex p-3 justify-between lg:justify-around max-w-screen-lg items-center relative m-auto">
+         <nav className="flex p-3 justify-between md:justify-evenly max-w-screen-lg items-center relative m-auto">
             {/* logo */}
             <img src={logo} alt="logo" />
             {/* Informational links */}
             <div className="hidden md:flex items-center justify-start space-x-4 text-white text-sm">
-               <p className="hover:text-blue-300"><a href="#home">Home</a></p>
-               <p className="hover:text-blue-300"><a href="#wgpt3">What is GPT?</a></p>
-               <p className="hover:text-blue-300"><a href="#possibility">Possibility</a></p>
-               <p className="hover:text-blue-300"><a href="#features">Case Studies</a></p>
-               <p className="hover:text-blue-300"><a href="#blog">Library</a></p>
+               <span className="hover:text-blue-300"><a href="#home">Home</a></span>
+               <span className="hover:text-blue-300"><a href="#wgpt3">What is GPT?</a></span>
+               <span className="hover:text-blue-300"><a href="#features">Case Studies</a></span>
+               <span className="hover:text-blue-300"><a href="#possibility">Possibility</a></span>
+               <span className="hover:text-blue-300"><a href="#blogs">Library</a></span>
             </div>
             <div className="flex justify-end items-center space-x-4">
                {/* Sign up buttons */}
@@ -45,13 +45,13 @@ const Navbar = () => {
                }
                {toggleMenu && (
                   <div className="flex flex-col scale-up-center md:hidden bg-blue-900 border-2 border-gray-50 rounded shadow-xl absolute top-16 right-0 p-8 -mt-2 sm:mt-0 text-right">
-                     <p className="text-white hover:text-blue-300 pb-4 mt-4 "><a href="#home">Home</a></p>
-                     <p className="text-white hover:text-blue-300 pb-4 "><a href="#wgp3">What is GPT?</a></p>
-                     <p className="text-white hover:text-blue-300 pb-4 "><a href="#possibility">Possibility</a></p>
-                     <p className="text-white hover:text-blue-300 pb-4 "><a href="#features">Case Studies</a></p>
-                     <p className="text-white hover:text-blue-300 pb-4 "><a href="#blog">Library</a></p>           
-                     <button className="sm:hidden text-md rounded-lg p-2 mb-2 bg-indigo-400 hover:bg-black text-white">Sign In</button>
-                     <button className="sm:hidden text-md rounded-lg p-2 mb-2 bg-yellow-600 over:bg-black text-white">Sign Up</button>       
+                     <span className="text-white hover:text-blue-300 mb-4 mt-4 "><a href="#home">Home</a></span>
+                     <span className="text-white hover:text-blue-300 mb-4 "><a href="#wgp3">What is GPT?</a></span>
+                     <span className="text-white hover:text-blue-300 mb-4 "><a href="#features">Case Studies</a></span>
+                     <span className="text-white hover:text-blue-300 mb-4 "><a href="#possibility">Possibility</a></span>
+                     <span className="text-white hover:text-blue-300 mb-4 "><a href="#blog">Library</a></span>           
+                     <button className="sm:hidden text-md rounded-lg p-2 mb-2 bg-indigo-400 hover:bg-gray-500 text-white">Sign In</button>
+                     <button className="sm:hidden text-md rounded-lg p-2 mb-2 bg-yellow-600 hover:bg-gray-500 text-white">Sign Up</button>       
                   </div>
                )}
             </div>
